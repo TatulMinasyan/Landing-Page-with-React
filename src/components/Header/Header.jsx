@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import './Header.css'
-import logo_icon from '../../assets/logotype.png'
+import logo_icon from '../../assets/Logotype.png'
 import search_icon from '../../assets/search-icon.png'
 
 const Header = ({ search, setSearch }) => {
