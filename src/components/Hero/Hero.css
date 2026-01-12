@@ -1,0 +1,159 @@
+.Hero {
+    margin: 48.5px;
+}
+
+.hero-side {
+    max-width: 1176px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3rem;
+    font-family: "Roboto";
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 0 0 calc((100% - 6rem) / 3);
+    max-width: calc((100% - 6rem) / 3);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.hero-card span {
+    font-weight: 700;
+    font-size: 0.813rem;
+    color: #EB0028;
+}
+
+.hero-card h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: #000000;
+    margin: 0;
+}
+
+.hero-card ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.hero-card ul img {
+    width: 3px;
+}
+
+.hero-card li {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    font-weight: 400;
+    color: #9B9B9B;
+}
+
+.hero-card ul .autor {
+    font-weight: 500;
+    color: black;
+}
+
+
+.hero-card p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #929292;
+    margin: 0;
+}
+
+
+/* **********For Modal************ */
+
+
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal {
+    background: #fff;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    margin: 0 0 10px;
+}
+
+.modal-text {
+    margin-bottom: 16px;
+    white-space: pre-wrap;
+}
+
+.modal-close {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* **************************************** */
+
+
+@media (max-width: 1024px) {
+    .Hero {
+        margin: 32px;
+    }
+
+    .hero-side {
+        gap: 2rem;
+    }
+
+    .hero-card {
+
+        flex: 0 0 calc((100% - 2rem) / 2);
+        max-width: calc((100% - 2rem) / 2);
+    }
+}
+
+
+@media (max-width: 767px) {
+    .Hero {
+        margin: 16px;
+    }
+
+    .hero-side {
+        gap: 1rem;
+        margin-top: 40px;
+    }
+
+    .hero-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .hero-card h2 {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+    }
+
+    .hero-card p {
+        font-size: 0.875rem;
+    }
+}
